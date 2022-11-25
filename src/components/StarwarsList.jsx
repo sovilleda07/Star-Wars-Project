@@ -27,10 +27,7 @@ export default function StarwarsList() {
         <CharacterList>
           {characters.map((character, idx) => (
             <CharacterListItem key={idx}>
-              <Character
-                id={idx + 1 + (page === 1 ? 0 : (page - 1) * 10)}
-                {...character}
-              />
+              <Character {...character} />
             </CharacterListItem>
           ))}
         </CharacterList>

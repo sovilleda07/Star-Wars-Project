@@ -18,13 +18,18 @@ export default function useGetCharacters(page = 1) {
   useEffect(() => {
     // Hacia donde vamos a hacer la petición
     // Inicializador del request con el método HTTP
-    fetch(`${SWAPI_URL}/people/?page=${page}`, { 
+    fetch(`${SWAPI_URL}/people/?page=${page}`, {
       method: 'GET',
     })
       .then((res) => res.json()) // Convertir la respuesta en json devuelve otra promesa
       .then((data) => {
+        // Mapeo de resultados para agregar el id del character
+        const results = data.results.map((obj) => ({
+          ...obj,
+          id: obj.url.split('/')[5],
+        }));
         // Set los personajes
-        setCharacters(data.results);
+        setCharacters(results);
         // Set la paginación
         setPagination({
           ...pagination,
