@@ -20,6 +20,9 @@ export default function Navigation() {
             <NavItem>
               <Link to="/planets">Planets</Link>
             </NavItem>
+            <NavItem>
+              <Link to="/spaceships">Spaceships</Link>
+            </NavItem>
             <UserSwitch />
           </Nav>
         </NavBar>

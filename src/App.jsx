@@ -9,6 +9,8 @@ import CharacterDetail from './pages/CharacterDetail';
 import { GlobalProvider } from './contexts/Global';
 import Planets from './pages/Planets/Planets';
 import PlanetDetail from './pages/Planets/PlanetsDetail';
+import Spaceships from './pages/Spaceships/Spaceships';
+import SpaceshipDetail from './pages/Spaceships/SpaceshipDetail';
 
 // Será el router principal
 function App() {
@@ -22,6 +24,8 @@ function App() {
             <Route path="characters/:id" element={<CharacterDetail />} />
             <Route path="planets" element={<Planets />} />
             <Route path="planets/:id" element={<PlanetDetail />} />
+            <Route path="spaceships" element={<Spaceships />} />
+            <Route path="spaceships/:id" element={<SpaceshipDetail />} />
           </Route>
         </Routes>
       </GlobalProvider>
