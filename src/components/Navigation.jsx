@@ -17,6 +17,9 @@ export default function Navigation() {
             <NavItem>
               <Link to="/characters">Characters</Link>
             </NavItem>
+            <NavItem>
+              <Link to="/planets">Planets</Link>
+            </NavItem>
             <UserSwitch />
           </Nav>
         </NavBar>

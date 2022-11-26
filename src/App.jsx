@@ -7,6 +7,8 @@ import Home from './pages/Home';
 import Characters from './pages/Characters';
 import CharacterDetail from './pages/CharacterDetail';
 import { GlobalProvider } from './contexts/Global';
+import Planets from './pages/Planets/Planets';
+import PlanetDetail from './pages/Planets/PlanetsDetail';
 
 // Será el router principal
 function App() {
@@ -18,6 +20,8 @@ function App() {
             <Route index element={<Home />} />
             <Route path="characters" element={<Characters />} />
             <Route path="characters/:id" element={<CharacterDetail />} />
+            <Route path="planets" element={<Planets />} />
+            <Route path="planets/:id" element={<PlanetDetail />} />
           </Route>
         </Routes>
       </GlobalProvider>
