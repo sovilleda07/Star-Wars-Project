@@ -23,6 +23,9 @@ export default function Navigation() {
             <NavItem>
               <Link to="/spaceships">Spaceships</Link>
             </NavItem>
+            <NavItem>
+              <Link to="/vehicles">Vehicles</Link>
+            </NavItem>
             <UserSwitch />
           </Nav>
         </NavBar>
