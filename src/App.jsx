@@ -13,6 +13,8 @@ import Spaceships from './pages/Spaceships/Spaceships';
 import SpaceshipDetail from './pages/Spaceships/SpaceshipDetail';
 import Vehicles from './pages/Vehicles/Vehicles';
 import VehicleDetail from './pages/Vehicles/VehicleDetail';
+import Films from './pages/Films/Films';
+import FilmDetail from './pages/Films/FilmDetail';
 
 // Será el router principal
 function App() {
@@ -30,6 +32,8 @@ function App() {
             <Route path="spaceships/:id" element={<SpaceshipDetail />} />
             <Route path="vehicles" element={<Vehicles />} />
             <Route path="vehicles/:id" element={<VehicleDetail />} />
+            <Route path="films" element={<Films />} />
+            <Route path="films/:id" element={<FilmDetail />} />
           </Route>
         </Routes>
       </GlobalProvider>

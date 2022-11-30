@@ -26,6 +26,9 @@ export default function Navigation() {
             <NavItem>
               <Link to="/vehicles">Vehicles</Link>
             </NavItem>
+            <NavItem>
+              <Link to="/films">Films</Link>
+            </NavItem>
             <UserSwitch />
           </Nav>
         </NavBar>
