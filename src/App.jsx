@@ -15,6 +15,8 @@ import Vehicles from './pages/Vehicles/Vehicles';
 import VehicleDetail from './pages/Vehicles/VehicleDetail';
 import Films from './pages/Films/Films';
 import FilmDetail from './pages/Films/FilmDetail';
+import Species from './pages/Species/Species';
+import SpecieDetail from './pages/Species/SpecieDetail';
 
 // Será el router principal
 function App() {
@@ -34,6 +36,8 @@ function App() {
             <Route path="vehicles/:id" element={<VehicleDetail />} />
             <Route path="films" element={<Films />} />
             <Route path="films/:id" element={<FilmDetail />} />
+            <Route path="species" element={<Species />} />
+            <Route path="species/:id" element={<SpecieDetail />} />
           </Route>
         </Routes>
       </GlobalProvider>

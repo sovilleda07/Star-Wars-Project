@@ -29,6 +29,9 @@ export default function Navigation() {
             <NavItem>
               <Link to="/films">Films</Link>
             </NavItem>
+            <NavItem>
+              <Link to="/species">Species</Link>
+            </NavItem>
             <UserSwitch />
           </Nav>
         </NavBar>
